@@ -1,0 +1,6 @@
+document.querySelectorAll('.card').forEach((c,i)=>{
+  c.animate([
+    {opacity:0,transform:'translateY(40px)'},
+    {opacity:1,transform:'translateY(0)'}
+  ],{duration:700,delay:i*120,fill:'forwards'});
+});
